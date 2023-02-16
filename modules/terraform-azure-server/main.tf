@@ -42,6 +42,7 @@ resource "azurerm_windows_virtual_machine" "vm" {
     offer     = var.os.offer
     sku       = var.os.sku
     version   = var.os.version
+allow_extension_operations=false
   }
 
 }
